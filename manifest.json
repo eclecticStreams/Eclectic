@@ -1,0 +1,21 @@
+{
+  "background_color": "#1d54e7",
+  "display": "standalone",
+  "name": "Eclectic Streams",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Eclectic Streams",
+  "start_url": "/",
+  "theme_color": "#1271e8",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "fullscreen"
+  ],
+  "lang": "en",
+  "description": "Your Odyssey into Ultimate Live Streaming",
+  "categories": [
+    "entertainment",
+    "sports"
+  ]
+}
