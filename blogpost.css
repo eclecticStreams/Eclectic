@@ -1,0 +1,173 @@
+ body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .header {
+            background-color: #6b63f4;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+
+        .team-info {
+            padding: 10px;
+            border-bottom: 2px solid #6b63f4;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+              justify-content: space-between; /* Distributes space between buttons */
+    width: 100%;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #ddd;
+            margin: 0 5px;
+            border-radius: 5px;
+            text-align: center; /* Centers text inside button */
+            flex: 1 1 0;
+        }
+
+        .tab.active {
+            background-color: #6b63f4;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .ticker-container {
+
+            overflow: hidden;
+
+            white-space: nowrap;
+
+            padding: 10px;
+
+            background-color: #6b63f4;
+
+            color: #fff;
+
+        }
+
+        .ticker-content {
+
+            display: inline-block;
+
+            animation: ticker 60s linear infinite;
+
+        }
+
+        @keyframes ticker {
+
+            0% {
+
+                transform: translateX(100%);
+
+            }
+
+            100% {
+
+                transform: translateX(-100%);
+
+            }
+
+        }
+        # .widget-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+
+       #tv-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 600px;
+            overflow: hidden;
+          
+        }
+
+        #tv-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+        }
+
+        #button-container {
+    display: flex;
+    justify-content: space-between; /* Distributes space between buttons */
+    width: 100%;
+    flex-wrap: nowrap; /* Prevents wrapping to a new line */
+    overflow-x: auto; /* Enables horizontal scrolling if buttons exceed container width */
+}
+
+.source-button {
+    flex: 1 1 0; /* Allows buttons to grow and shrink equally */
+    margin: 5px; /* Adds margin around buttons */
+    padding: 10px; /* Padding inside buttons */
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: calc(1em + (1vw)); /* Responsive font size */
+  font-family: 'Arial Nova', Arial, sans-serif; /* Set font to Arial Nova Bold */
+    font-weight: bold; /* Ensures the font is bold */
+   white-space: nowrap; /* Prevents text from wrapping to the next line */
+    overflow: hidden; /* Hides overflow text */
+    text-overflow: ellipsis; /* Displays ellipsis if text overflows */
+    border: none; /* Removes border */
+    text-align: center; /* Centers text inside button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+  
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+}
+
+      
+
+.source-button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.source-button:hover {
+    background-color: #ddd;
+      }
+
+        .follow-us {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .follow-us a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .footer {
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #666;
+            margin-top: 20px;
+        }
+      
