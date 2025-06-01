@@ -1,0 +1,83 @@
+<div class="team-info">
+    <!-- One Scorebat matchview iframe for display in header -->
+    <iframe id="sb-matchview" loading="lazy" scrolling="no" style="width:100%; height:250px;"></iframe>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" data-target="MATCH_BROADCAST">MATCH BROADCAST</div>
+    <div class="tab" data-target="LINE_UP">LINE UP</div>
+    <div class="tab" data-target="MATCH_EVENTS">MATCH EVENTS</div>
+  </div>
+
+  <!-- MATCH BROADCAST TAB -->
+  <div id="MATCH_BROADCAST" class="tab-content active">
+    <p class="center-text">NOTE: WHENEVER YOU ARE REDIRECTED CLICK ON BACK 🔙 THEN CLICK ON SAME PLACE AGAIN</p>
+    <p class="center-text">STREAMS MAY TAKE UP TO 15 SECONDS TO LOAD. PLEASE WAIT...</p>
+
+    <div class="ticker-container">
+      <div class="ticker-content">
+        Please make sure you check all the TVs available to know the one that works perfectly.
+        <span style="font-family: courier;">
+          If the first doesn't work, try the second; If the second doesn't work, try the third; If the third doesn't work, try the next one
+        </span>
+      </div>
+    </div>
+
+    <div id="button-container"></div>
+
+    <div id="tv-container">
+      <iframe id="tv-iframe" loading="lazy" sandbox="allow-forms allow-same-origin allow-scripts" allowfullscreen></iframe>
+    </div>
+
+    <div class="ticker-container" style="margin-top:20px;">
+      <div class="ticker-content">
+        ATTENTION!!!: Disclaimer: We are not affiliated with, nor claim affiliation with, any owners of videos/streams/TV Channel on our site, and all content is copyrighted by respective owners. We disclaim responsibility for site content and have no control over audiovisual content. Viewers should use discretion in processing information. For issues, contact the respective owners.
+      </div>
+    </div>
+
+    <div class="footer">
+      Data provided by <a href="https://www.facebook.com/salawudeenabdulmaleek08" target="_blank">Triple A</a>
+    </div>
+
+    <p class="center-text"><b><u><i>To view full screen</i></u></b></p>
+    <p class="center-text"><i>Click on the square bracket [] at the bottom right corner of the screen as seen in the screenshot below</i></p>
+    <div class="center-text" style="margin-top:10px;">
+      <a href="#">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhW6K5UP55uk0Y5yYJmt8Rzg_MXGIAM9oI0F-1zFa0GYzVCXI90wjKLYs_3pmpN5JhTEdnySOhUu47jv0v5Q7IK2nOxpSBnIRYJZ_s3W7MuywZLW6a9IORa7MqQFr5eo1IetYs30SCgP_msZPmF8ffeGgiENcQ-4tEylxC1Hb11PjLTT5yqX8T6eP73Pw/w200-h170-rw/Screenshot_20220723-145314.png"
+             alt="view full screen" width="200" height="170" loading="lazy" />
+      </a>
+    </div>
+  </div>
+
+  <!-- LINE UP TAB -->
+  <div id="LINE_UP" class="tab-content">
+    <iframe id="sb-lineup" frameborder="0" width="100%" height="650" loading="lazy" allowfullscreen allow="autoplay; fullscreen"></iframe>
+    <script>
+      (function(d, s, id) {
+        if (d.getElementById(id)) return;
+        var js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv';
+        d.getElementsByTagName(s)[0].parentNode.insertBefore(js, d.getElementsByTagName(s)[0]);
+      })(document, 'script', 'scorebat-jssdk-lineup');
+    </script>
+  </div>
+
+  <!-- MATCH EVENTS TAB -->
+  <div id="MATCH_EVENTS" class="tab-content">
+    <iframe id="sb-events" frameborder="0" width="100%" height="650" loading="lazy" allowfullscreen allow="autoplay; fullscreen"></iframe>
+    <script>
+      (function(d, s, id) {
+        if (d.getElementById(id)) return;
+        var js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv';
+        d.getElementsByTagName(s)[0].parentNode.insertBefore(js, d.getElementsByTagName(s)[0]);
+      })(document, 'script', 'scorebat-jssdk-events');
+    </script>
+  </div>
+
+  <div class="follow-us">
+    <a href="https://whatsapp.com/channel/0029VaEbC4T7YSdAvHL0xo2a" target="_blank">FOLLOW US ON WHATSAPP</a>
+    <a href="https://t.me/eclecticstreams" target="_blank">FOLLOW US ON TELEGRAM</a>
+  </div>
