@@ -1,0 +1,122 @@
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+      color: #333;
+    }
+    .header, .ticker-container {
+      background: #6b63f4;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+    .team-info {
+      padding: 10px;
+      border-bottom: 2px solid #6b63f4;
+    }
+    .tabs {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+      width: 100%;
+    }
+    .tab {
+      flex: 1 1 0;
+      margin: 0 5px;
+      padding: 10px 20px;
+      background: #ddd;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .tab.active {
+      background: #6b63f4;
+      color: #fff;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .ticker-content {
+      display: inline-block;
+      white-space: nowrap;
+      animation: ticker 60s linear infinite;
+    }
+    @keyframes ticker {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    #tv-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 600px;
+      overflow: hidden;
+    }
+    #tv-iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 500px;
+      border: none;
+    }
+    #button-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      overflow-x: auto;
+    }
+    .source-button {
+      flex: 1 1 0;
+      margin: 5px;
+      padding: 10px;
+      background: #3498db;
+      color: #fff;
+      font-family: 'Arial Nova', Arial, sans-serif;
+      font-size: calc(1em + 1vw);
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border: none;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .source-button.active {
+      background: #4CAF50;
+    }
+    .source-button:hover {
+      background: #ddd;
+      color: #000;
+    }
+    .follow-us {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .follow-us a {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background: #3498db;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer {
+      font-size: 12px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #666;
+      margin-top: 20px;
+    }
+    .center-text {
+      text-align: center;
+      font-family: sans-serif;
+    }
+  
