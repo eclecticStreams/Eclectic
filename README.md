@@ -1,4 +1,4 @@
-```markdown
+
 # Eclectic Streams TV Embed
 
 This repository contains the HTML, CSS, and JavaScript files for embedding Eclectic Streams TV features (match view, momentum, tabs, etc.) into any webpage using GitHub as a CDN.
@@ -26,15 +26,15 @@ When embedded, you’ll see:
 - Responsive design with clean UI  
 
 ---
-Maintained by **Eclectic Streams**
-```
+Maintained by Eclectic Streams
+
 
 🔧 How to Use & Edit the Post Page Embed
 
 When you copy and paste the embed code (like the one you shared) into your Blogger/WordPress post, you only need to focus on the configuration section at the top of the <head> block.
 
 Here’s the part you’ll edit:
-
+```
 <script>
   /*<![CDATA[*/
   let TeamVS = [
@@ -57,7 +57,7 @@ Here’s the part you’ll edit:
   ];
   /*]]>*/
 </script>
-
+```
 ✏️ What You Can Edit
 
 TeamVS → Replace the logo URLs + names with the two teams playing.
@@ -80,13 +80,13 @@ That means whenever you update the repo, all posts using this embed will update 
 🚀 Example
 
 If you change this in your post page:
-
+```
 const competition = "Premier League";
 let TeamVS = [
   ['https://cdn.resfu.com/img_data/equipos/209.png', 'Chelsea'],
   ['https://cdn.resfu.com/img_data/equipos/254.png', 'Liverpool']
 ];
-
+```
 
 Your embed will show:
 Premier League: Chelsea vs Liverpool (with their logos + correct match/momentum).
