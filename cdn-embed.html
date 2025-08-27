@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <!-- Configurations (you can edit these directly in post page) -->
+  <script>
+    /*<![CDATA[*/
+    let TeamVS = [
+      ['https://cdn.resfu.com/img_data/equipos/263.png', 'Arsenal'],
+      ['https://cdn.resfu.com/img_data/equipos/1924.png', 'PSG']
+    ];
+
+    const matchId = "1705045";       // Scorebat ID
+    const momentumId = "14025080";   // SofaScore ID
+    const competition = "UCL";       // Competition name (customizable)
+
+    // Build the match title dynamically
+    const matchTitle = `${competition}: ${TeamVS[0][1]} vs ${TeamVS[1][1]}`;
+
+    const streams = [
+      "https://www.eclecticstreams.com.ng/p/iframelink1", 
+      "https://www.eclecticstreams.com.ng/p/iframelink1",
+      "https://www.eclecticstreams.com.ng/p/iframelink1"
+    ];
+    /*]]>*/
+  </script>
+
+  <!-- Link your CSS (tvbody1.css) from GitHub via jsDelivr -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eclecticStreams/Eclectic@main/tvbody1.css" />
+</head>
+
+<body>
+  <!-- Inject your HTML structure (tvbody1.html) -->
+  <div id="tv-wrapper">
+    <!-- tvbody1.html will load here -->
+  </div>
+
+  <script>
+    // Load tvbody1.html dynamically into the wrapper
+    fetch("https://cdn.jsdelivr.net/gh/eclecticStreams/Eclectic@main/tvbody1.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("tv-wrapper").innerHTML = html;
+
+        // Once HTML is loaded, attach the JS logic
+        const script = document.createElement("script");
+        script.src = "https://cdn.jsdelivr.net/gh/eclecticStreams/Eclectic@main/tvbody1.js";
+        document.body.appendChild(script);
+      })
+      .catch(err => console.error("Failed to load tvbody1.html:", err));
+  </script>
+</body>
+
+</html>
