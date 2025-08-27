@@ -40,7 +40,15 @@ body {
     .tab-content.active {
       display: block;
     }
-
+.ticker-content {
+      display: inline-block;
+      white-space: nowrap;
+      animation: ticker 60s linear infinite;
+    }
+    @keyframes ticker {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
     #tv-container {
       position: relative;
       padding-bottom: 56.25%;
