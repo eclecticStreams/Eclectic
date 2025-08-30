@@ -1,127 +1,153 @@
 body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
-    }
+    font-family: 'Poppins', sans-serif; /* Sets default font style */
+    margin: 0; /* Removes default browser margin */
+    padding: 0; /* Removes default browser padding */
+    background-color: #f0f0f0; /* Light gray background for the page */
+    color: #333; /* Default text color (dark gray) */
+}
 
-    .team-info {
-      padding: 10px;
-      border-bottom: 2px solid #6b63f4;
-    }
+.header {
+    background-color: #6b63f4; /* Purple background for header */
+    color: white; /* White text inside header */
+    text-align: center; /* Centers header text */
+    padding: 10px 0; /* Vertical padding inside header */
+    font-weight: bold; /* Makes header text bold */
+}
 
-    .tabs {
-      display: flex;
-      justify-content: space-between;
-      margin: 20px 0;
-      width: 100%;
-    }
+.team-info {
+    padding: 10px; /* Adds spacing inside section */
+    border-bottom: 2px solid #6b63f4; /* Adds purple border below section */
+}
 
-    .tab {
-      padding: 10px 20px;
-      cursor: pointer;
-      background-color: #ddd;
-      margin: 0 5px;
-      border-radius: 5px;
-      text-align: center;
-      flex: 1 1 0;
-    }
+.tabs {
+    display: flex; /* Aligns child tabs in a row */
+    justify-content: center; /* Centers tabs horizontally */
+    margin: 20px 0; /* Adds vertical spacing */
+    justify-content: space-between; /* Distributes space evenly between tabs */
+    width: 100%; /* Takes full container width */
+}
 
-    .tab.active {
-      background-color: #6b63f4;
-      color: white;
-    }
+.tab {
+    padding: 10px 20px; /* Padding inside tab button */
+    cursor: pointer; /* Changes cursor to pointer */
+    background-color: #ddd; /* Default background for inactive tabs */
+    margin: 0 5px; /* Horizontal spacing between tabs */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centers text */
+    flex: 1 1 0; /* Makes tabs flexible and equally sized */
+}
 
-    .tab-content {
-      display: none;
-    }
+.tab.active {
+    background-color: #6b63f4; /* Purple background for active tab */
+    color: white; /* White text for active tab */
+}
 
-    .tab-content.active {
-      display: block;
-    }
-  .ticker-container {
+.tab-content {
+    display: none; /* Hidden by default */
+}
 
-            overflow: hidden;
+.tab-content.active {
+    display: block; /* Visible only when active */
+}
 
-            white-space: nowrap;
+.ticker-container {
+    overflow: hidden; /* Hides overflowing ticker text */
+    white-space: nowrap; /* Prevents ticker text from wrapping */
+    padding: 10px; /* Spacing inside ticker */
+    background-color: #6b63f4; /* Purple ticker background */
+    color: #fff; /* White text for ticker */
+}
 
-            padding: 10px;
-
-            background-color: #6b63f4;
-
-            color: #fff;
-
-        }
 .ticker-content {
-      display: inline-block;
-      white-space: nowrap;
-      animation: ticker 60s linear infinite;
-    }
-    @keyframes ticker {
-      0%   { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
-    }
-# .widget-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 20px;
-    }
+    display: inline-block; /* Makes ticker text inline-block */
+    animation: ticker 60s linear infinite; /* Smooth continuous scrolling animation */
+}
 
-    #tv-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 600px;
-      overflow: hidden;
+@keyframes ticker {
+    0% {
+        transform: translateX(100%); /* Starts ticker off-screen to the right */
     }
+    100% {
+        transform: translateX(-100%); /* Moves ticker completely to the left */
+    }
+}
 
-    #tv-iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 500px;
-    }
+.widget-content {  
+    display: flex; /* Flex container */
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center; /* Centers content horizontally */
+    margin: 20px; /* Spacing around container */
+}
 
-    #button-container {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-    }
+#tv-container {
+    position: relative; /* Allows absolute positioning for iframe */
+    padding-bottom: 56.25%; /* Maintains 16:9 aspect ratio */
+    height: 600px; /* Fixed height */
+    overflow: hidden; /* Hides overflow content */
+}
 
-    .source-button {
-      flex: 1 1 0;
-      margin: 5px;
-      padding: 10px;
-      background-color: #3498db;
-      color: #fff;
-      font-size: calc(1em + (1vw));
-      font-family: 'Arial Nova', Arial, sans-serif;
-      font-weight: bold;
-      white-space: nowrap;
-      border: none;
-      cursor: pointer;
-      text-align: center;
-      transition: background-color 0.3s ease;
-    }
+#tv-iframe {
+    position: absolute; /* Positioned relative to tv-container */
+    top: 0; /* Aligns iframe to top */
+    left: 0; /* Aligns iframe to left */
+    width: 100%; /* Full width */
+    height: 500px; /* Fixed height */
+}
 
-    .source-button.active {
-      background-color: #4CAF50;
-      color: white;
-    }
+#button-container {
+    display: flex; /* Aligns buttons in a row */
+    justify-content: space-between; /* Spaces buttons apart */
+    width: 100%; /* Full width */
+    flex-wrap: nowrap; /* Prevents buttons from wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling for overflow */
+}
 
-    .source-button:hover {
-      background-color: #ddd;
-      color: #000;
-    }
+.source-button {
+    flex: 1 1 0; /* Flexible button sizing */
+    margin: 5px; /* Spacing around buttons */
+    padding: 10px; /* Inner padding */
+    background-color: #3498db; /* Blue button background */
+    color: #fff; /* White button text */
+    font-size: calc(1em + (1vw)); /* Responsive font size */
+    font-family: 'Arial Nova', Arial, sans-serif; /* Custom font */
+    font-weight: bold; /* Bold button text */
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden; /* Hides overflowing text */
+    text-overflow: ellipsis; /* Shows "..." if text overflows */
+    border: none; /* Removes border */
+    text-align: center; /* Centers text inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
 
-    .footer {
-      font-size: 12px;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      color: #666;
-      margin-top: 20px;
-    }
+.source-button.active {
+    background-color: #4CAF50; /* Green background for active button */
+    color: white; /* White text */
+}
+
+.source-button:hover {
+    background-color: #ddd; /* Light gray background on hover */
+}
+
+.follow-us {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Centers social links */
+    margin: 20px 0; /* Vertical spacing */
+}
+
+.follow-us a {
+    margin: 0 10px; /* Spacing between social links */
+    padding: 10px 20px; /* Inner padding */
+    background-color: #3498db; /* Blue button background */
+    color: white; /* White link text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.footer {
+    font-size: 12px; /* Small text */
+    font-family: Arial, sans-serif; /* Footer font */
+    text-align: center; /* Centers footer text */
+    color: #666; /* Gray text color */
+    margin-top: 20px; /* Spacing above footer */
+}
