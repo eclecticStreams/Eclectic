@@ -40,6 +40,19 @@ body {
     .tab-content.active {
       display: block;
     }
+  .ticker-container {
+
+            overflow: hidden;
+
+            white-space: nowrap;
+
+            padding: 10px;
+
+            background-color: #6b63f4;
+
+            color: #fff;
+
+        }
 .ticker-content {
       display: inline-block;
       white-space: nowrap;
